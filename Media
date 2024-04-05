@@ -1,0 +1,29 @@
+programa {
+  funcao inicio() {
+    real nota0 = 0
+    real nota1 = 0
+    real nota2 = 0
+    real nota3 = 0
+    escreva("qual foi a sua nota no primeiro bimestre ")
+    leia (nota0)
+    escreva("qual foi a sua nota no segundo bimestre ")
+    leia (nota1)
+    escreva("qual foi a sua nota no terceiro bimestre ")
+    leia (nota2)
+    escreva("qual foi a sua nota no quarto bimestre ")
+    leia (nota3)
+    real notasoma = nota0+nota1+nota2+nota3
+    real notafinal = notasoma/4
+    escreva("Sua nota total foi: "+notafinal)
+    se (notafinal>= 7){
+      escreva(" Passou de Ano")}
+    
+    senao se (notafinal< 4)
+      escreva(" Você foi reprovado")
+
+    se (notafinal>=4 e notafinal<7){
+      escreva(" Você está de recuperação(sortudo)")
+    }
+    
+  }
+}
